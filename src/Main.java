@@ -4,7 +4,6 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Main {
     public static void main(String[] args) {
-//        ToDo: Replace sout by using String.format
         ApplicationContext iocContainer = new ClassPathXmlApplicationContext("applicationContext.xml");
         Shape circle = iocContainer.getBean("circle", CircleShape.class);
         Shape square = iocContainer.getBean("square", SquareShape.class);
